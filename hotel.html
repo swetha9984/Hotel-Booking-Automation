@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <h1>Hotel Booking System</h1>
 
+    <form id="booking-form">
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" required>
+
+        <br><br>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" required>
+
+        <h3>Guest Details</h3>
+
+        <label for="adults">Adults:</label>
+        <input type="number" id="adults" value="1" min="1" readonly>
+        <button type="button" id="adult-plus"
+            onclick="adults.value = Number(adults.value) + 1">+</button>
+
+        <br><br>
+
+        <label for="children">Children:</label>
+        <input type="number" id="children" value="0" min="0" readonly>
+        <button type="button" id="child-plus"
+            onclick="children.value = Number(children.value) + 1">+</button>
+
+        <br><br>
+
+        <label for="rooms">Rooms:</label>
+        <input type="number" id="rooms" value="1" min="1" readonly>
+        <button type="button" id="room-plus"
+            onclick="rooms.value = Number(rooms.value) + 1">+</button>
+
+        <br><br>
+
+        <button type="button" id="search-button"
+            onclick="document.getElementById('search-results').style.display='block'">
+            Search Hotels
+        </button>
+    </form>
+
+    <div id="search-results" style="display:none;">
+        <h2>Search Results</h2>
+        <p>Hotel search completed successfully.</p>
+    </div>
+</body>
+</html>
