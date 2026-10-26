@@ -1,0 +1,8 @@
+Test ID	  Test scenario	         Expected result
+TC01	    Select check-in date	 Selected date is displayed correctly
+TC02	    Select check-out date	 Checkout date is displayed correctly
+TC03	    Increase adult count	 Adult count increases by one
+TC04	    Increase child count	  Child count increases by one
+TC05	    Increase room count	    Room count increases by one
+TC06	    Click Search Hotels	    Search confirmation is displayed
+TC07	    Select checkout before   check-in	Invalid date range is rejected 
