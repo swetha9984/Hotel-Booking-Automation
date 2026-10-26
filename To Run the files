@@ -1,0 +1,15 @@
+How to run the project
+After adding and committing these files to GitHub, download or clone the repository to your computer.
+1. Install dependencies:
+pip install -r requirements.txt
+
+2. Start the local webpage from the project folder:
+python -m http.server 8000
+
+3. Open a second terminal in the same folder and execute:
+python -m pytest -v
+
+4. Generate an XML report if needed:
+python -m pytest -v --junitxml=test-results.xml
+
+NOTE: The test code assumes Google Chrome is installed and Selenium Manager can configure its driver. These are sample project files; run the tests before claiming they passed.
